@@ -14,7 +14,6 @@ const ResetPassword = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-     
       const response = await api.post(`/auth/reset-password/${id}/${token}`, {
         password,
       });
@@ -31,15 +30,20 @@ const ResetPassword = () => {
 
   return (
     <div className="container mx-auto mt-8">
-    <form onSubmit={handleSubmit} className="max-w-md mx-auto bg-white p-8 shadow" >
-    <h2 className="text-2xl mb-4 font-bold">ResetPassword</h2>
-      {error && (
-        <div className="bg-red-100 p-3 mb-4 text-red-600 rounded">
-          {error}
-        </div>
-      )}
+      <form
+        onSubmit={handleSubmit}
+        className="max-w-md mx-auto bg-white p-8 shadow"
+      >
+        <h2 className="text-2xl mb-4 font-bold">ResetPassword</h2>
+        {error && (
+          <div className="bg-red-100 p-3 mb-4 text-red-600 rounded">
+            {error}
+          </div>
+        )}
         <p>
-          <label htmlFor="password" className="block mb-2 font-bold">Password</label>
+          <label htmlFor="password" className="block mb-2 font-bold">
+            Password
+          </label>
           <input
             type={showPassword ? "text" : "password"}
             name="password"
@@ -51,12 +55,17 @@ const ResetPassword = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <br></br>
-          <button type="button" onClick={() => setShowPassword(!showPassword)}>
+          <button type="button" onClick={() => setShowPassword(!showPassword)} className="bg-red-100 p-2 mb-4 text-red-600  font-serif rounded">
             {showPassword ? "Hide" : "Show"} password
           </button>
         </p>
         <br></br>
-        <button type="submit" className="w-full bg-blue-500 text-white rounded font-serif p-2 text-xl">Update Password</button>
+        <button
+          type="submit"
+          className="w-full bg-blue-500 text-white rounded font-serif p-2 text-xl"
+        >
+          Update Password
+        </button>
       </form>
     </div>
   );
