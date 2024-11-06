@@ -34,7 +34,7 @@ const ResetPassword = () => {
         onSubmit={handleSubmit}
         className="max-w-md mx-auto bg-white p-8 shadow"
       >
-        <h2 className="text-2xl mb-4 font-bold">ResetPassword</h2>
+        <h2 className="text-2xl mb-4 font-bold">Reset Password</h2>
         {error && (
           <div className="bg-red-100 p-3 mb-4 text-red-600 rounded">
             {error}
