@@ -55,7 +55,11 @@ const ResetPassword = () => {
             onChange={(e) => setPassword(e.target.value)}
           />
           <br></br>
-          <button type="button" onClick={() => setShowPassword(!showPassword)} className="bg-red-100 p-2 mb-4 text-red-600  font-serif rounded">
+          <button
+            type="button"
+            onClick={() => setShowPassword(!showPassword)}
+            className="bg-red-100 p-2 mb-4 text-red-600  font-serif rounded"
+          >
             {showPassword ? "Hide" : "Show"} password
           </button>
         </p>
