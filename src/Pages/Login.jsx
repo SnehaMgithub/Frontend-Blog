@@ -76,7 +76,7 @@ const Login = () => {
             {showPassword ? "Hide" : "Show"} password
           </button>
         </p>
-        <button onClick={() => navigate("/forgotpassword")} className="bg-red-100 p-2 mb-4 text-red-600  font-serif rounded">Forgot Password</button>
+        <button onClick={() => navigate("/forgot-password")} className="bg-red-100 p-2 mb-4 text-red-600  font-serif rounded">Forgot Password</button>
         <button
           type="submit"
           className="w-full bg-blue-500 text-white rounded font-serif p-2 text-xl"

@@ -1,13 +1,12 @@
-import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Blog from './Pages/Blog';
 import CreateBlog from './Pages/CreateBlog';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
-import ForgotPassword from './Pages/ForgotPassword';
 import ResetPassword from './Pages/ResetPassword';
 import AdminPanel from './Pages/AdminPanel';
 import Navbar from './Components/Navbar';
+import ForgotPassword from './Pages/ForgotPassword';
 
 const App = () => {
   return (
@@ -29,3 +28,4 @@ const App = () => {
 };
 
 export default App;
+
